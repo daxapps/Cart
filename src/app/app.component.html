@@ -1,11 +1,37 @@
 <div class="row">
   <div class="col-md-12">
-
+    <nav class="navbar navbar-togglable-md navbar-light bg-faded">
+      <div class="collapse navbar-collapse">
+        <ul class="nabar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="#home" class="nav-link">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 </div>
 
 <div class="row">
-  <div class="col-md-2"></div>
+  <div class="col-md-2">
+    <br>
+    <br>
+    <br>
+    <div class="custom-sidebar">
+      <div *ngFor="let item of listItems">
+        <a href="{{item.link}}" *ngIf="item.isNew!==true">{{item.name}}</a>
+        <a href="{{item.link}}" target="blank" *ngIf="item.isNew===true">{{item.name}}</a>
+      </div>
+      <hr>
+      <div class="add-component-container">
+        <input type="text" class="form-control" [(ngModel)]="title" placeholder="Type Title">
+        <input type="text" class="form-control" [(ngModel)]="url" placeholder="Type url like www.google.com"> 
+        <div class="col-md-10 offset-md-1">
+          <button class="btn btn-primary btn-block" (click)="add(title,url)">Add Link</button>
+        </div>       
+      </div>
+    </div>    
+  </div>
   <div class="col-md-10">
     <router-outlet></router-outlet>
   </div>
