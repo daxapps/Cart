@@ -1,0 +1,10 @@
+.img-fluid {
+  max-width: 75%;
+}
+
+.carousel-caption {
+  position: inherit;
+  color: #333;
+  text-align: left;
+  left: 5%;
+}
