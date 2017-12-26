@@ -105,6 +105,6 @@ export class ProductsComponent implements OnInit {
     this.cartProducts = cartData;
   }
   goToCart() {
-    this.router.navigate(['/cart'];)
+    this.router.navigate(['/cart']);
   }
 }
