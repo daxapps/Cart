@@ -1,0 +1,35 @@
+.custom-image-style {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-desc-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.custom-products-cart-container {
+  padding-top: 20px;
+}
+
+.custom-products-cart-container ul ul {
+  width: 75%;
+  padding:  15%;
+}
+
+.product-cart-item {
+  display: flex;
+}
+
+.product-cart-item-left {
+  display: flex;
+}
+
+.card {
+  margin-bottom: .75rem;
+}
+
+.card-block {
+  padding: 1.25rem;
+}
